@@ -106,7 +106,7 @@ pre {
 
 @media (max-width: 768px) {
   .secret::before {
-    background: url("assets/image-mobile.png") no-repeat center;
+    background: url("assets/image-mobile.PNG") no-repeat center;
     background-size: contain;
   }
 
@@ -114,4 +114,5 @@ pre {
     color: #fffafc; /* slightly softer white */
   }
 }
+
 
