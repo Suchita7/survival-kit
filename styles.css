@@ -1,0 +1,98 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #ffe6eb, #fff5f7);
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #666;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  margin-bottom: 15px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+.card-header {
+  padding: 16px;
+  font-weight: bold;
+  background: #fff0f3;
+}
+
+.card-content {
+  display: none;
+  padding: 16px;
+  line-height: 1.6;
+}
+
+.card.active .card-content {
+  display: block;
+}
+
+pre {
+  white-space: pre-wrap;
+  font-family: inherit;
+}
+
+.locked {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.gf-tip {
+  color: #7a7a7a;
+  font-style: italic;
+  background: #f5f5f5;
+  padding: 6px 10px;
+  border-radius: 8px;
+  display: inline-block;
+  margin-top: 6px;
+}
+
+.secret {
+  position: relative;
+  color: #fff;
+  overflow: hidden;
+}
+
+/* Background image layer */
+.secret::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("assets/image3.png") no-repeat center;
+  background-size: contain; /* 👈 shows full image without cropping */
+  filter: blur(1px) brightness(0.6); /* 👈 blur + dull */
+  z-index: 0;
+}
+
+/* Content stays above image */
+.secret pre {
+  position: relative;
+  z-index: 1;
+}
+
+
+
+
