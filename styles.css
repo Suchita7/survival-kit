@@ -109,10 +109,11 @@ pre {
     background: url("assets/image-mobile.PNG") no-repeat center;
     background-size: contain;
   }
-
+  
   .secret pre {
     color: #fffafc; /* slightly softer white */
   }
 }
+
 
 
